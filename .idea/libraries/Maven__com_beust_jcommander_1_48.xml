@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: com.beust:jcommander:1.48">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48-sources.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48-sources.jar!/" />
+>>>>>>> 7d854afbf17b61579d39fa0875ab7e8602a9ab9c
     </SOURCES>
   </library>
 </component>

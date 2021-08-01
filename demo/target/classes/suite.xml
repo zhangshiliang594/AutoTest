@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="CESU-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test">
+    <test name="Login">
+        <classes>
+            <class name="com.demo.testng.suit.SuiteConfig"></class>
+            <class name="com.demo.testng.suit.Login"></class>
+        </classes>
+    </test>
+
+    <test name="Pay">
+        <classes>
+            <class name="com.demo.testng.suit.SuiteConfig"></class>
+            <class name="com.demo.testng.suit.Pay"></class>
+        </classes>
+    </test>
+</suite>
