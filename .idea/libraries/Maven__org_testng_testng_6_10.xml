@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: org.testng:testng:6.10">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.10/testng-6.10.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -9,15 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.10/testng-6.10-sources.jar!/" />
-=======
-      <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10-sources.jar!/" />
->>>>>>> 7d854afbf17b61579d39fa0875ab7e8602a9ab9c
     </SOURCES>
   </library>
 </component>
