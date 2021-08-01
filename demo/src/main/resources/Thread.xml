@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="demo1" parallel="methods" thread-count="3">
+
+    <test name="thread1">
+        <classes>
+            <class name="com.demo.testng.Thredtest.Thredtestdemo"/>
+            <class name="com.demo.testng.suit.Login"/>
+        </classes>
+    </test>
+    <test name="thread2">
+        <classes>
+            <class name="com.demo.testng.Thredtest.Thredtestdemo"/>
+            <class name="com.demo.testng.suit.Pay"/>
+        </classes>
+    </test>
+    <test name="thread3">
+        <classes>
+            <class name="com.demo.testng.Thredtest.Thredtestdemo"/>
+            <class name="com.demo.testng.paramter.Dataprovider"/>
+        </classes>
+    </test>
+</suite>
