@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AutoTest.iml" filepath="$PROJECT_DIR$/.idea/AutoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chartep/Chartep.iml" filepath="$PROJECT_DIR$/Chartep/Chartep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chartep10/Chartep10.iml" filepath="$PROJECT_DIR$/Chartep10/Chartep10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chartep11/Chartep11.iml" filepath="$PROJECT_DIR$/Chartep11/Chartep11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chartep2/Chartep2.iml" filepath="$PROJECT_DIR$/Chartep2/Chartep2.iml" />
       <module fileurl="file://$PROJECT_DIR$/comorgtestng/com.org.testng.iml" filepath="$PROJECT_DIR$/comorgtestng/com.org.testng.iml" />
       <module fileurl="file://$PROJECT_DIR$/comdemotestNG/comdemotestNG.iml" filepath="$PROJECT_DIR$/comdemotestNG/comdemotestNG.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />

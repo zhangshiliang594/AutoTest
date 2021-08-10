@@ -1,0 +1,25 @@
+[
+  {"description":"这是一个get请求",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"这是一个不带参数get请求"
+    }
+  },
+  {
+    "description":"这是一个带参数get请求",
+    "request":{
+      "uri":"/getparamter",
+      "method":"get",
+      "queries":{
+        "name":"laowang",
+        "age":"18"
+      }
+    },
+    "response":{
+      "text":"我老王八又活过来了？？？？？"
+    }
+  }
+]

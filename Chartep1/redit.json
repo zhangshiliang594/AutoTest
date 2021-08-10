@@ -1,0 +1,25 @@
+[
+  {
+    "description":"fromURL",
+    "request":{
+      "uri":"/rediturl"
+    },
+    "redirectTo":"http://www.baidu.com"
+  },
+  {
+    "description":"url",
+    "request":{
+      "uri":"/geturl"
+    },
+    "redirectTo":"/geturlnew"
+  },
+  {
+    "description":"fromurl",
+    "request":{
+      "uri":"/geturlnew"
+    },
+    "response":{
+      "text":"success"
+    }
+  }
+]

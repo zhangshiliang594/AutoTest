@@ -7,13 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chartep" />
+        <module name="Chartep10" />
+        <module name="Chartep11" />
+        <module name="Chartep2" />
         <module name="com.org.testng" />
         <module name="comdemotestNG" />
         <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AutoTest" target="1.5" />
       <module name="Chartep" target="1.6" />
+      <module name="Chartep10" target="1.5" />
+      <module name="Chartep11" target="1.5" />
+      <module name="Chartep2" target="1.5" />
       <module name="com.org.testng" target="1.5" />
       <module name="comdemotestNG" target="1.5" />
       <module name="demo" target="1.5" />
