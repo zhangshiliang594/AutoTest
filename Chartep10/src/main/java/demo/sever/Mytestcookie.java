@@ -1,4 +1,4 @@
-package com.demo.test;
+package demo.sever;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

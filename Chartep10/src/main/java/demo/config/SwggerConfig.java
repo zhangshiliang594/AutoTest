@@ -1,4 +1,4 @@
-package config;
+package demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +23,7 @@ public class SwggerConfig {
                 .apiInfo(apiInfo())
                 .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.demo.test"))
+                .apis(RequestHandlerSelectors.basePackage("demo.sever"))
                 .paths(PathSelectors.any())
                 .build();
     }
