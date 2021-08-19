@@ -24,6 +24,8 @@
         <module>demo</module>
         <module>Chartep10</module>
         <module>Chartep11</module>
+        <module>Chartep12</module>
+        <module>Chartep13</module>
     </modules>
 
     <dependencies>
