@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite>
-
+<suite name="用户系统">
+    <test name="用户管理系统测试用例">
+        <classes>
+            <class name="com.course.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.GetUserInfoTest">
+                <methods>
+                    <include name="getUserInfo"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.GetUserListTest">
+                <methods>
+                    <include name="getUserListInfo"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.UpdateUserInfoTest">
+                <methods>
+                    <include name="UpdateUserInfo"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.UpdateUserInfoTest">
+                <methods>
+                    <include name="DeleteUserInfo"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.AddUserTest">
+                <methods>
+                    <include name="addUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGListener"/>
+    </listeners>
 </suite>

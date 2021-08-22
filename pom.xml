@@ -26,6 +26,7 @@
         <module>Chartep11</module>
         <module>Chartep12</module>
         <module>Chartep13</module>
+        <module>Chartep14</module>
     </modules>
 
     <dependencies>

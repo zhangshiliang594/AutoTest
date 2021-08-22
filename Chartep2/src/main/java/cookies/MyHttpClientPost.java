@@ -35,8 +35,10 @@ public class MyHttpClientPost {
     public void getcookie() throws IOException {
         HttpGet get = new HttpGet(url + bundle.getString("test_uri"));
         DefaultHttpClient client = new DefaultHttpClient();
-        client.execute(get);
+        HttpResponse response = client.execute(get);
         this.store = client.getCookieStore();
+        String result = EntityUtils.toString(response.getEntity());
+        System.out.println(result);
     }
 
     @Test(dependsOnMethods = {"getcookie"})
