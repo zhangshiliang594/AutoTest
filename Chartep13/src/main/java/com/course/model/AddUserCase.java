@@ -8,14 +8,14 @@ import lombok.Data;
 @Data
 public class AddUserCase {
 
-    private int id;
+    private String id;
     private String userName;
-    private int passWd;
-    private int sex;
-    private int age;
-    private int permission;
-    private int isDelete;
-    private int expected;
+    private String passWd;
+    private String sex;
+    private String age;
+    private String permission;
+    private String isDelete;
+    private String expected;
 
 //    @Override
 //    public String toString(){

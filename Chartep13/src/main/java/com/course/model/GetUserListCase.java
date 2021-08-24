@@ -8,9 +8,9 @@ import lombok.Data;
 @Data
 public class GetUserListCase {
 
-    private int id;
+    private String id;
     private String userName;
-    private int age;
-    private int sex;
+    private String age;
+    private String sex;
     private String expected;
 }

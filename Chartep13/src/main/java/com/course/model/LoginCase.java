@@ -8,8 +8,8 @@ import lombok.Data;
 @Data
 public class LoginCase {
 
-    private int id;
+    private String id;
     private String userName;
-    private int passWd;
-    private int expected;
+    private String passWd;
+    private String expected;
 }
