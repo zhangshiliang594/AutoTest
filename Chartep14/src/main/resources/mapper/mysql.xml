@@ -9,7 +9,7 @@
     </select>
     <!--增加用户-->
     <insert id="addUser" parameterType="com.course.model.User">
-        INSERT INTO USER (id,userName,passWd,age,sex,permission,isDelete) VALUES (#{id},#{userName},#{passWd},#{age},#{sex},#{permission},#{isDelete})
+        INSERT INTO user (userName,passWd,age,sex,permission,isDelete) VALUES (#{userName},#{passWd},#{age},#{sex},#{permission},#{isDelete})
     </insert>
     <!--更新用户-->
     <update id="updateUserInfo" parameterType="com.course.model.User">
@@ -31,6 +31,7 @@
                 isDelete = #{isDelete},
             </if>
         </trim>
+        where id = #{id}
     </update>
     <!--查询用户-->
     <select id="getUserInfo" parameterType="com.course.model.User" resultType="com.course.model.User">

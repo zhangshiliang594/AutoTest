@@ -58,6 +58,13 @@ public class LoginTest {
         LoginCase loginCase = session.selectOne("LoginCase",2);
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginuri);
+
+        //发送请求
+        String result = getResult(loginCase);
+        System.out.println(result);
+
+        //验证结果
+        Assert.assertEquals(loginCase.getExpected(),result);
     }
     private String getResult(LoginCase loginCase) throws IOException {
 

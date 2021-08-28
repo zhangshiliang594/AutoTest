@@ -20,8 +20,9 @@ import java.io.IOException;
  */
 public class AddUserTest {
 
+
     @Test(dependsOnGroups = "loginTrue",description = "增加用户成功用例")
-    public void addUser() throws IOException {
+    public void addUser() throws IOException, InterruptedException {
         SqlSession session = DatabaseUtil.getSqlSession();
         AddUserCase addUserCase = session.selectOne("AddUserInfo",1);
         System.out.println(addUserCase.toString());
@@ -29,6 +30,7 @@ public class AddUserTest {
 
         //发请求，获取结果
         String result = getResult(addUserCase);
+        Thread.sleep(3000);
         User user = session.selectOne("addUser",addUserCase);
         System.out.println(user.toString());
         Assert.assertEquals(addUserCase.getExpected(),result);
@@ -39,7 +41,6 @@ public class AddUserTest {
         HttpPost post = new HttpPost(TestConfig.addUseruri);
         JSONObject param = new JSONObject();
         param.put("userName",addUserCase.getUserName());
-        param.put("id",addUserCase.getId());
         param.put("passWd",addUserCase.getPassWd());
         param.put("sex",addUserCase.getSex());
         param.put("age",addUserCase.getAge());

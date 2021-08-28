@@ -32,6 +32,7 @@ public class GetUserListTest {
 
         //发送请求获取结果
         JSONArray resultJson = getJsonResult(getUserListCase);
+        System.out.println(resultJson);
 
         //验证
         List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);
@@ -44,7 +45,9 @@ public class GetUserListTest {
         for (int i=0;i<resultJson.length();i++){
             JSONObject expect = (JSONObject) resultJson.get(i);
             JSONObject actual = (JSONObject) userListJson.get(i);
-            Assert.assertEquals(expect.toString(),actual.toString());
+            System.out.println(expect.toString());
+            System.out.println(actual.toString());
+            Assert.assertEquals(expect.getString("userName"),actual.getString("userName"));
         }
     }
 

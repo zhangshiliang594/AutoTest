@@ -16,7 +16,6 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -35,17 +34,21 @@ public class GetUserInfoTest {
         JSONArray resultJson = getJsonResult(getUserInfoCase);
         User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
         //验证
-        List userlist = new ArrayList();
+        List<User> userlist = new ArrayList<User>();
         userlist.add(user);
         JSONArray jsonArray = new JSONArray(userlist);
-        Assert.assertEquals(jsonArray,resultJson);
+        System.out.println(jsonArray.getJSONObject(0));
+        System.out.println(resultJson);
+        System.out.println(resultJson.getJSONObject(0));
+        Assert.assertEquals(jsonArray.getJSONObject(0).getString("userName"),resultJson.getJSONObject(0).getString("userName"));
+
     }
 
     private JSONArray getJsonResult(GetUserInfoCase getUserInfoCase) throws IOException {
 
         HttpPost post = new HttpPost(TestConfig.getUserInfouri);
         JSONObject param = new JSONObject();
-        param.put("id","id");
+        param.put("id",getUserInfoCase.getUserId());
         post.setHeader("Content-Type","application/json");
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
@@ -53,8 +56,8 @@ public class GetUserInfoTest {
         String result;
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        List resultlist = Arrays.asList(result);
-        JSONArray array = new JSONArray(resultlist);
+        JSONArray array;
+        array = new JSONArray(result);
         return array;
     }
 }

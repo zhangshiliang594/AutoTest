@@ -32,7 +32,7 @@
     <!--获取用户列表-->
     <select id="getUserList" parameterType="com.course.model.GetUserListCase" resultType="com.course.model.User">
         select * from user
-        <trim prefix="where" suffixOverrides="and">
+        <trim prefix="where" prefixOverrides="and">
             <if test="null !=userName and '' != userName">
                 AND userName=#{userName}
             </if>
@@ -90,5 +90,6 @@
                 AND isDelete=#{isDelete}
             </if>
         </trim>
+        LIMIT 1;
     </select>
 </mapper>
